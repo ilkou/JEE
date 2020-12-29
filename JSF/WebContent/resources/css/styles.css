@@ -1,0 +1,48 @@
+.requis {
+	color: red
+}
+
+label {
+  display: inline-block;
+  width: 50%;
+  text-align: left;
+}​
+
+input {
+	border-style: solid
+}
+
+table {
+  table-layout: fixed;
+  width: 100%;
+  border-collapse: collapse;
+  border: 2px solid purple;
+}
+
+thead tr th:nth-child(1) {
+  width: 25%;
+}
+
+thead tr th:nth-child(2) {
+  width: 15%;
+}
+
+thead tr th:nth-child(3) {
+  width: 15%;
+}
+
+thead tr th:nth-child(4) {
+  width: 15%;
+}
+
+thead tr th:nth-child(5) {
+  width: 15%;
+}
+thead tr th:nth-child(6) {
+  width: 15%;
+}
+
+
+th, td {
+  padding: 20px;
+}

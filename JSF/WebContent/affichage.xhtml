@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="fr"
+    xmlns="http://www.w3.org/1999/xhtml"
+    xmlns:f="http://java.sun.com/jsf/core"
+    xmlns:h="http://java.sun.com/jsf/html"
+    xmlns:ui="http://java.sun.com/jsf/facelets">
+    <h:head>
+        <h:outputStylesheet library="css" name="styles.css" />
+        <title>Affichage</title>
+    </h:head>
+<h:body>
+	<h:dataTable id="commandes" value="#{commandeBean.infos}" var="commande">
+        <h:column>
+        	<f:facet name="header">
+        		<h:outputText value="Date"/>
+        	</f:facet>
+        	<h:outputText value="#{commande.date}">
+        		<f:convertDateTime pattern="EEEE d MMMM yyyy" locale="FR"/>  
+        	</h:outputText>
+        </h:column>
+        <h:column>
+        	<f:facet name="header">Montant</f:facet>        	
+        	<h:outputText id="montant" value="#{commande.montant}">
+        		<f:convertNumber type="currency" currencySymbol="DH" locale="FR" />
+        	</h:outputText>
+        </h:column>
+        <h:column>
+        	<f:facet name="header">Mode de paiement</f:facet>
+        	<h:outputText value="#{commande.mode_paiement}"/>
+        </h:column>
+        <h:column>
+        	<f:facet name="header">Statut de paiement</f:facet>
+        	<h:outputText value="#{commande.statut_paiement}"/>
+        </h:column>
+        <h:column>
+        	<f:facet name="header">Mode de livraison</f:facet>
+        	<h:outputText value="#{commande.mode_livraison}"/>
+        </h:column>
+        <h:column>
+        	<f:facet name="header">Statut de livraison</f:facet>
+        	<h:outputText value="#{commande.statut_livraison}"/>
+        </h:column>
+	</h:dataTable>
+</h:body>
+</html>

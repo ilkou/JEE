@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="fr"
+    xmlns="http://www.w3.org/1999/xhtml"
+    xmlns:f="http://java.sun.com/jsf/core"
+    xmlns:h="http://java.sun.com/jsf/html"
+    xmlns:ui="http://java.sun.com/jsf/facelets">
+    <h:head>
+        <h:outputStylesheet library="css" name="styles.css" />
+        <title>Formu laire</title>
+    </h:head>
+    <h:body>
+        <h:form>
+        	<fieldset style="border-color: blue; border-style: solid">
+        	 <legend style="color: blue">Informations commande</legend>
+        		<h:outputLabel for="date">Date <span class="requis">*</span></h:outputLabel> 
+        		<h:inputText id="date" value="#{commandeBean.commande.date}" size="30" required="true" requiredMessage="Date est requis">
+        			<f:convertDateTime pattern="yyyy-MM-dd"/>  
+        		</h:inputText>
+               	<h:message for="date" style="color: green; margin-left: 10px"></h:message>
+        		<br/> <br/>
+        		<h:outputLabel for="montant">Montant <span class="requis">*</span></h:outputLabel> 
+        		<h:inputText id="montant" value="#{commandeBean.commande.montant}" border="2" size="30"
+        			required="true" requiredMessage="Montant est requis"
+        			validatorMessage="Le montant ne doit pas dépasser 20000 dh">
+        			<f:validateDoubleRange maximum="20000" />
+        		</h:inputText>
+        		<h:message for="montant" style="color: green; margin-left: 10px"></h:message>
+        		<br/> <br/>
+        		<h:outputLabel for="mode_pai">Mode de paiement <span class="requis">*</span></h:outputLabel> 
+        		<h:inputText id="mode_pai" value="#{commandeBean.commande.mode_paiement}" border="2" size="30"
+        			required="true" requiredMessage="Mode de paiement est requis"
+        			validatorMessage="Veuillez entrer une chaine entre 6 et 20">
+        			<f:validateLength minimum="6" maximum="20" />
+        		</h:inputText>
+        		<h:message for="mode_pai" style="color: green; margin-left: 10px"></h:message>
+        		<br/> <br/>
+        		<h:outputLabel for="statut_pai">Statut du paiement</h:outputLabel> 
+        		<h:inputText id="statut_pai" value="#{commandeBean.commande.statut_paiement}" border="2" size="30" />
+        		<br/> <br/>
+        		<h:outputLabel for="mode_liv">Mode de livraison <span class="requis">*</span></h:outputLabel> 
+        		<h:inputText id="mode_liv" value="#{commandeBean.commande.mode_livraison}" border="2" size="30"
+        			required="true" requiredMessage="Mode de livraison est requis"
+        			validatorMessage="Ce champ ne doit pas dépasser 30 caractères">
+        			<f:validateLength maximum="30" />
+        		</h:inputText>
+        		<h:message for="mode_liv" style="color: green; margin-left: 10px"></h:message>
+        		<br/> <br/>
+        		<h:outputLabel for="statut_liv">Statut de la livraison</h:outputLabel> 
+        		<h:inputText id="statut_liv" value="#{commandeBean.commande.statut_livraison}" border="2" size="30" />
+        		<br/>
+        	</fieldset>
+        	<br />
+        	<h:commandButton value="Valider" type="submit" action="${commandeBean.save}"/>
+        </h:form>
+    </h:body>
+</html>
