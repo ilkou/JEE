@@ -7,7 +7,7 @@
 
 <div align="center">
 
-![desin-pattern](https://github.com/ilkou/JEE-TPs/tree/main/resources/design-pattern.jpg "design-pattern-types")
+
+![desin-pattern](https://github.com/ilkou/JEE-TPs/tree/main/resources/design-pattern.jpg "design-pattern")
 
 </div>
-
