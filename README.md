@@ -12,4 +12,8 @@
 
 ### Types
 
+<div align="center"><div align="center">
+
 ![design-pattern](https://github.com/ilkou/JEE-TPs/tree/main/resources/Design-Patterns-in-Java.png "design-pattern")
+
+</div>
