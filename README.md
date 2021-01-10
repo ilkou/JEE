@@ -1,6 +1,6 @@
 # JEE-TPs
 
-# design patterns:
+## design patterns:
 
 * [DZone's Design Patterns Refcard](https://dzone.com/refcardz/design-patterns)
 
@@ -10,10 +10,6 @@
 
 * [the builder pattern](https://dzone.com/articles/design-patterns-the-builder-pattern)
 
-
-<div align="center">
-
+### Types
 
 ![design-pattern](https://github.com/ilkou/JEE-TPs/tree/main/resources/Design-Patterns-in-Java.png "design-pattern")
-
-</div>
