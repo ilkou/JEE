@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 2.5//EN" "http://struts.apache.org/dtds/struts-2.5.dtd">
+
+<struts>
+
+	<constant name="struts.devMode" value="true" />
+
+	<package name="basicstruts2" extends="struts-default">
+
+		<default-action-ref name="index" />
+
+		<action name="index">
+			<result>/index.jsp</result>
+		</action>
+		<action name="login" class="com.ensak.action.LoginAction" method="execute">
+			<result name="success" type="chain" >client</result>
+			<result name="error">/index.jsp</result>
+		</action>
+		<action name="client" class="com.ensak.action.ClientAction">
+			<result name="success">client.jsp</result>
+			<result name="error">index.jsp</result>
+		</action>
+	</package>
+
+</struts>
