@@ -1,4 +1,4 @@
-# JEE-TPs
+# JEE
 
 ## JEE FRAMEWORKS DEMOS
 
