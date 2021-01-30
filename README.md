@@ -1,5 +1,10 @@
 # JEE-TPs
 
+## JEE FRAMEWORKS DEMOS
+
+* [JSF](https://github.com/ilkou/jsf-demo)
+
+
 ## design patterns:
 
 * [DZone's Design Patterns Refcard](https://dzone.com/refcardz/design-patterns)
