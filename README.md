@@ -4,6 +4,9 @@
 
 * [JSF](https://github.com/ilkou/jsf-demo)
 
+* [STRUTS](https://github.com/ilkou/struts-demo)
+
+* [HIBERNATE](https://github.com/ilkou/hibernate-demo)
 
 ## design patterns:
 
