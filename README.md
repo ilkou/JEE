@@ -18,6 +18,10 @@
 
 * [the builder pattern](https://dzone.com/articles/design-patterns-the-builder-pattern)
 
+## Maven
+
+* [cheat-sheet](https://www.journaldev.com/33645/maven-commands-options-cheat-sheet#12-mvn-test)
+
 ### Types
 
 <div align="center"><div align="center">
