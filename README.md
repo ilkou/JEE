@@ -8,6 +8,8 @@
 
 * [HIBERNATE](https://github.com/ilkou/hibernate-demo)
 
+* [EJB](https://github.com/ilkou/ejb-demo)
+
 ## design patterns:
 
 * [DZone's Design Patterns Refcard](https://dzone.com/refcardz/design-patterns)
